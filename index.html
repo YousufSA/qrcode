@@ -30,14 +30,18 @@
                     <div class="form-group">
                         <label for="size">Select QR Size:</label>
                         <select class="form-control" id="size">
-                          <option value="68">68X68</option>
-                          <option value="100">100X100</option>
-                          <option value="128" selected>128X128</option>
-                          <option value="150">150X150</option>
-                          <option value="260">260X260</option>
-                          <option value="500">500X500</option>
+                            <option value="68">68X68</option>
+                            <option value="100">100X100</option>
+                            <option value="128" selected>128X128</option>
+                            <option value="150">150X150</option>
+                            <option value="260">260X260</option>
+                            <option value="500">500X500</option>
                         </select>
-                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="brandSize">QR Brand Size:</label>
+                        <input type="url" class="form-control" id="brandSize" placeholder="Enter brand size" name="brandSize" value="32">
+                    </div>
                     <button onclick="generateQr()" type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
