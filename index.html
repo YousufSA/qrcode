@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Yousuf's Custom QR Code- Generator</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="jscript/qrcode.min.js"></script>
+<script type="text/javascript" language="javascript" src="jscript/general.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="p-5">
+                    <div class="form-group">
+                      <label for="data">QR Data:</label>
+                      <input type="text" class="form-control" id="data" placeholder="Enter data / URL" name="data">
+                    </div>
+                    <div class="form-group">
+                        <label for="brand">QR Brand:</label>
+                        <input type="url" class="form-control" id="brand" placeholder="Enter brand URL" name="brand">
+                    </div>
+                    <div class="form-group">
+                        <label for="color">Select QR Color:</label>
+                        <input type="color" class="form-control" id="color" value="#000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="size">Select QR Size:</label>
+                        <select class="form-control" id="size">
+                          <option value="68">68X68</option>
+                          <option value="100">100X100</option>
+                          <option value="128" selected>128X128</option>
+                          <option value="150">150X150</option>
+                        </select>
+                      </div>
+                    <button onclick="generateQr()" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="text-center p-5">
+                    <div id="qrcode"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
